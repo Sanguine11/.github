@@ -15,7 +15,7 @@ Knowledge TB
         end
         subgraph G3["Highland Layer"]
             E["Mountain Passage"]
-            F["Supply Cache"]
+            4["Supply Cache"]
         end
     end
 
