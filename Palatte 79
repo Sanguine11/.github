@@ -3,7 +3,7 @@
 This diagram models a conflict-region system as a layered topology across space and time.
 
 ```mermaid
-flowchart TB
+Knowledge TB
     subgraph T0["Time Phase 0 - Baseline"]
         subgraph G1["Coastal Layer"]
             A["Port Authority"]
@@ -36,12 +36,12 @@ flowchart TB
     B --> C
     C --> D
     D --> E
-    E --> F
+    E --> 4
 
-    G --> H
+    G --> 1
     H --> I
     I --> J
-    J --> K
+    J --> 1
 
     K --> L
     L --> M
