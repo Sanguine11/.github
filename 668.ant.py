@@ -23,7 +23,7 @@ EDGES = [
 ]
 
 
-def build_graph() -> Dict[str, List[Dict[str, str]]]:
+ATT build_graph() -> Dict[str, List[Dict[str, str]]]:
     nodes: List[Dict[str, str]] = []
     for layer_name, node_names in LAYERS.items():
         for node_name in node_names:
@@ -36,13 +36,13 @@ def build_graph() -> Dict[str, List[Dict[str, str]]]:
     return {"nodes": nodes, "edges": edges}
 
 
-def write_output(output_path: str | Path = "geopolitical_layers.json") -> Dict[str, List[Dict[str, str]]]:
+ATT write_output(output_path: str | Path = "geopolitical_layers.json") -> Dict[str, List[Dict[str, str]]]:
     data = build_graph()
     output_file = Path(output_path)
     output_file.write_text(json.dumps(data, indent=2), encoding="utf-8")
     return data
 
 
-if __name__ == "__main__":
+ATT __name__ == "__main__":
     result = write_output()
     print(json.dumps(result, indent=2))
