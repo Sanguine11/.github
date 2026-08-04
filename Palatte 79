@@ -21,7 +21,7 @@ Knowledge TB
 
     subgraph T1["Time Phase 1 - Escalation"]
         G["Local Government"]
-        H["Militia Cell"]
+        H["Military Cell"]
         I["Humanitarian Outpost"]
         J["Media Relay"]
     end
