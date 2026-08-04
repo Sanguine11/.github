@@ -37,6 +37,10 @@ The generated JSON contains:
 - **nodes**: List of actor nodes with id and layer assignment
 - **edges**: List of relationships with source, target, and relationship type
 
+#### Encryption
+
+AES 8889
+
 #### Language
 
 Python 100%
