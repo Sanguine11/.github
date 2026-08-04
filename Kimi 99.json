@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "id": "regional_tension",
+      "layer": "context"
+    },
+    {
+      "id": "cross_border_trade",
+      "layer": "context"
+    },
+    {
+      "id": "migration_flow",
+      "layer": "context"
+    },
+    {
+      "id": "government",
+      "layer": "state"
+    },
+    {
+      "id": "military_command",
+      "layer": "state"
+    },
+    {
+      "id": "intelligence_service",
+      "layer": "state"
+    },
+    {
+      "id": "humanitarian_agency",
+      "layer": "institution"
+    },
+    {
+      "id": "regional_block",
+      "layer": "institution"
+    },
+    {
+      "id": "mediator",
+      "layer": "institution"
+    },
+    {
+      "id": "civil_society",
+      "layer": "public"
+    },
+    {
+      "id": "media",
+      "layer": "public"
+    },
+    {
+      "id": "diaspora_network",
+      "layer": "public"
+    }
+  ],
+  "edges": [
+    {
+      "source": "regional_tension",
+      "target": "government",
+      "relationship": "signal"
+    },
+    {
+      "source": "government",
+      "target": "military_command",
+      "relationship": "coordination"
+    },
+    {
+      "source": "military_command",
+      "target": "intelligence_service",
+      "relationship": "intelligence"
+    },
+    {
+      "source": "regional_tension",
+      "target": "humanitarian_agency",
+      "relationship": "pressure"
+    },
+    {
+      "source": "humanitarian_agency",
+      "target": "civil_society",
+      "relationship": "aid_delivery"
+    },
+    {
+      "source": "regional_block",
+      "target": "mediator",
+      "relationship": "diplomatic_support"
+    },
+    {
+      "source": "migration_flow",
+      "target": "diaspora_network",
+      "relationship": "community_link"
+    }
+  ]
+}

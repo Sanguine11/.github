@@ -1,0 +1,54 @@
+# Palette 79: Geopolitical Nodes in Geographic Layers
+
+This diagram models a conflict-region system as a layered topology across space and time.
+
+```mermaid
+flowchart TB
+    subgraph T0["Time Phase 0 - Baseline"]
+        subgraph G1["Coastal Layer"]
+            A["Port Authority"]
+            B["Trade Corridor"]
+        end
+        subgraph G2["Riverine Layer"]
+            C["River Gate"]
+            D["Water Access Node"]
+        end
+        subgraph G3["Highland Layer"]
+            E["Mountain Passage"]
+            F["Supply Cache"]
+        end
+    end
+
+    subgraph T1["Time Phase 1 - Escalation"]
+        G["Local Government"]
+        H["Militia Cell"]
+        I["Humanitarian Outpost"]
+        J["Media Relay"]
+    end
+
+    subgraph T2["Time Phase 2 - Stabilization"]
+        K["Negotiation Node"]
+        L["Regional Broker"]
+        M["Civil Infrastructure"]
+    end
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+
+    K --> L
+    L --> M
+```
+
+### Layer meanings
+- Coastal Layer: ports, shipping routes, and maritime pressure points
+- Riverine Layer: crossings, water control, and local logistics
+- Highland Layer: terrain routes, supply movement, and concealment points
+- Time Phases: baseline, escalation, and stabilization
